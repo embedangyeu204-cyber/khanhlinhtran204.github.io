@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.cv-container {
+  width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.profile-img img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.profile-info {
+  margin-left: 20px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.profile-info h3 {
+  margin: 5px 0 15px;
+  color: #666;
+}
+
+.summary {
+  background: #f1f3f6;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+.section h2 {
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.education h3 {
+  margin: 5px 0;
+}
+
+.contact {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.contact p {
+  margin: 8px 0;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  margin: 0;
+}
+
+.job strong {
+  display: block;
+  margin: 5px 0;
+}
+
+.skills {
+  margin: 20px 0;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin: 8px 0;
+}
