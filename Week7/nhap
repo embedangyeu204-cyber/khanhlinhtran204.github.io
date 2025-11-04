@@ -1,0 +1,25 @@
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 20px;
+    }
+
+    
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #3498db; /* màu gốc */
+      border-radius: 10px;
+      transition: background-color 0.3s ease; /* hiệu ứng mượt */
+    }
+
+    /* Khi hover đổi màu */
+    .box:hover {
+      background-color: #e67e22; /* màu khi rê chuột */
+    }
+  </style>

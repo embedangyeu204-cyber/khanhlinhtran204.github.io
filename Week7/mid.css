@@ -1,0 +1,23 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;/*ngang*/
+      align-items: center;
+      height: 100vh;
+      gap: 0px;
+    }
+
+    
+    .box {
+      width: 300px;
+      height: 200px;
+      background-color: #3498db; 
+      border-radius: 0px;
+      transition: background-color 0.0s ease; 
+    }
+
+    
+    .box:hover {
+      background-color: #e67e22; 
+    }

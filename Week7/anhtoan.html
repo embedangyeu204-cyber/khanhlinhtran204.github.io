@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Background cover - Fullscreen</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    /* div che phủ toàn bộ màn hình */
+    .hero {
+      height: 100vh;               /* cao = 100% viewport height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      
+      background-image: url(daisy.jpg);
+      background-position: center; /* canh giữa */
+      background-repeat: no-repeat;
+      background-size: cover;      /* <--- quan trọng: cover */
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div>Ảnh nền che phủ toàn màn hình</div>
+  </div>
+</body>
+</html>
