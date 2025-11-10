@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài b - Circle</title>
+  <script language="javascript">
+    function circleCalc() {
+      var radius = prompt("Enter circle radius:");
+
+      // Kiểm tra dữ liệu nhập
+      if (radius == null || radius.trim() === "" || isNaN(radius)) {
+        document.write("<font color='red'>Radius is not a valid number!</font>");
+        return;
+      }
+
+      // Chuyển sang số và tính toán
+      var r = parseFloat(radius);
+      var pi = 3.14;
+      var perimeter = 2 * pi * r;
+      var area = pi * r * r;
+
+      // Hiển thị kết quả
+      document.write("<h2>Circle Calculation</h2>");
+      document.write("<b>Radius:</b> " + r + "<br>");
+      document.write("<font color='green'><b>Perimeter:</b> " + perimeter + "</font><br>");
+      document.write("<font color='blue'><b>Area:</b> " + area + "</font>");
+    }
+  </script>
+</head>
+<body onload="circleCalc()">
+</body>
+</html>

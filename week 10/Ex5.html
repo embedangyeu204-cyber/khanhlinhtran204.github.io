@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication Table</title>
+  <script language="javascript">
+    function display() {
+      var a = document.f.a.value;
+      var txt = document.getElementById("view_area").contentWindow.document;
+
+      // Xóa nội dung cũ trong khung hiển thị
+      txt.body.innerHTML = "";
+
+      // Kiểm tra nếu nhập sai
+      if (a == "" || isNaN(a)) {
+        txt.write("<font color='red'>You must enter a number</font>");
+      } else {
+        // Hiển thị tiêu đề
+        txt.write("<b>Multiplication table " + a + ":</b><br/><br/>");
+        // Dùng vòng lặp for để in ra bảng cửu chương
+        for (var i = 1; i <= 10; i++) {
+          txt.write(a + " × " + i + " = " + (a * i) + "<br/>");
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form name="f">
+    <table align="center" border="0">
+      <tr>
+        <td colspan="2" align="center"><h2>MULTIPLICATION TABLE</h2></td>
+      </tr>
+
+      <tr>
+        <td align="right">
+          Which multiplication table that you want to display?
+        </td>
+        <td>
+          <input type="text" name="a" size="5" onchange="display()" />
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <iframe id="view_area" width="230" height="250"></iframe>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

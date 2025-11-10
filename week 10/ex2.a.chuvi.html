@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài a - Rectangle</title>
+  <script language="javascript">
+    function rectangleCalc() {
+      var width = prompt("Enter rectangle width:");
+      var height = prompt("Enter rectangle height:");
+
+      // Kiểm tra dữ liệu nhập vào
+      if (width == null || width.trim() === "" || isNaN(width)) {
+        document.write("<font color='red'>Width is not a valid number!</font>");
+        return;
+      }
+      if (height == null || height.trim() === "" || isNaN(height)) {
+        document.write("<font color='red'>Height is not a valid number!</font>");
+        return;
+      }
+
+      // Chuyển sang số và tính toán
+      var w = parseFloat(width);
+      var h = parseFloat(height);
+      var perimeter = 2 * (w + h);
+      var area = w * h;
+
+      // Hiển thị kết quả
+      document.write("<h2>Rectangle Calculation</h2>");
+      document.write("<b>Width:</b> " + w + "<br>");
+      document.write("<b>Height:</b> " + h + "<br>");
+      document.write("<font color='green'><b>Perimeter:</b> " + perimeter + "</font><br>");
+      document.write("<font color='blue'><b>Area:</b> " + area + "</font>");
+    }
+  </script>
+</head>
+<body onload="rectangleCalc()">
+</body>
+</html>

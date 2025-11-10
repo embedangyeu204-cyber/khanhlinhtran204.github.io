@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 1 - Nhập 2 số và tính tổng</title>
+  <script language="javascript">
+    // Chạy khi trang được tải
+    function tinhTong() {
+      // Nhập giá trị A và B
+      var txtA = prompt("Enter number A:");
+      var txtB = prompt("Enter number B:");
+
+      // Kiểm tra giá trị A
+      if (txtA == null || txtA.trim() === "" || isNaN(txtA)) {
+        alert("Number A is formatted incorrect");
+        return; // thoát hàm nếu sai
+      }
+
+      // Kiểm tra giá trị B
+      if (txtB == null || txtB.trim() === "" || isNaN(txtB)) {
+        alert("Number B is formatted incorrect");
+        return;
+      }
+
+      // Chuyển sang số và tính tổng
+      var a = parseFloat(txtA);
+      var b = parseFloat(txtB);
+      var result = a + b;
+
+      // Hiển thị kết quả
+      alert("Result:\n" + a + " + " + b + " = " + result);
+    }
+  </script>
+</head>
+<body onload="tinhTong()">
+</body>
+</html>
