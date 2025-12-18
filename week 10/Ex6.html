@@ -3,41 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Mini Calculator</title>
-  <script language="javascript">
-    function calculate() {
-      var a = document.fmcal.txta;
-      var b = document.fmcal.txtb;
-      var o = document.fmcal.sltop;
-      var r = document.fmcal.txtr;
-
-      // Biểu thức chính quy kiểm tra số hợp lệ
-      var numberFormat = /^[+-]?\d+(\.\d+)?$/;
-
-      // Kiểm tra dữ liệu nhập của a
-      if (numberFormat.test(a.value) == false) {
-        alert("a must be a number!");
-        a.focus();
-      }
-      // Kiểm tra dữ liệu nhập của b
-      else if (numberFormat.test(b.value) == false) {
-        alert("b must be a number!");
-        b.focus();
-      }
-      // Kiểm tra phép chia cho 0
-      else if ((o.value == "/" || o.value == "%") && parseFloat(b.value) == 0) {
-        alert("b can't be 0!");
-        b.focus();
-      }
-      // Nếu hợp lệ thì tính kết quả
-      else {
-        r.value = eval(a.value + o.value + b.value);
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="Ex6.css">
+  <script src="Ex6.js"></script>
 </head>
 
 <body>
-  <form name="fmcal">
+  <form name="frmCal">
     <table border="0" align="center">
       <tr>
         <td colspan="2" align="center"><h2>MINI CALCULATOR</h2></td>
